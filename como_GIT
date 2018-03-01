@@ -1,0 +1,5 @@
+nano ola
+git add ola
+git commit -m "teste"
+git push origin master
+
