@@ -1,0 +1,187 @@
+var bucketList = ['learn to juggle', 'take a falconry class', 'climb Mt Everest'];
+
+var listItem = bucketList[2];
+
+console.log(bucketList.length);
+bucketList.push("dead","alive")
+console.log(bucketList);
+bucketList.pop()
+console.log(bucketList);
+
+Review Arrays
+Nice work! In this lesson, we learned these concepts regarding arrays:
+Arrays are lists and are a way to store data in JavaScript. Each item inside of an array is at a numbered position. Arrays are created with brackets [].
+We can access one item in an array using it's numbered position, with syntax like: myArray[0].
+Arrays have a length property, which allows you to see how many items are in an array.
+Arrays also have their own methods, including push and pop, which add and subtract items from an array, respectively.
+
+---------
+
+var vacationSpots = ['Paris', 'New York', 'Barcelona'];
+
+console.log(vacationSpots[0]);
+console.log(vacationSpots[1]);
+console.log(vacationSpots[2]);
+
+for (var i = vacationSpots.length-1; i>=0; i--) {
+	console.log('I would love to visit ' + vacationSpots[i]);
+}
+
+
+
+
+var myPlaces = [1, 2, 3];
+var friendPlaces = [1, 2, 3];
+
+for (var i = 0; i < myPlaces.length; i++) {
+    console.log(myPlaces[i]);
+  
+  for (var j = 0; j < friendPlaces.length; j++) {
+        console.log(friendPlaces[j]);
+    
+    if (myPlaces[i] === friendPlaces[j]) {
+    			console.log('Match: ' + myPlaces[i]);
+				}
+    }
+}
+
+
+var cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+
+var currentCard = 'Heart';
+
+while (currentCard !== 'Spade') {
+  console.log(currentCard);
+
+  var randomNumber = Math.floor(Math.random() * 4);
+
+  currentCard = cards[randomNumber];
+}
+
+console.log('Found a Spade!');
+
+
+Review Loops
+Great job! In this unit we learned how to write less repetitive code with loops.
+for loops allow us to repeat a block of code a known amount of times.
+We can use a for loop inside another for loop to compare two lists.
+while loops are for looping over a code block an unknown amount of times.
+
+---------------------
+
+JavaScript with HTML and CSS
+At the beginning of this course we mentioned that JavaScript is the most widely used language on the web. So how can we use JavaScript on a website?
+So far, we've only used JavaScript in isolation – not alongside other technologies. Javascript typically gets included with HTML and CSS (which structure and style web pages). All modern browsers know how to run JavaScript if we include it in an HTML and CSS project.
+JavaScript also has some special functions to help us access the code inside HTML and CSS so that we can write JavaScript to make that output interactive and dynamic.
+
+
+function main() {
+  $('.skillset').hide();
+  $('.skillset').fadeIn(1000);
+  
+}
+$(document).ready(main);
+
+
+
+function main() {
+  $('.skillset').hide();
+  $('.skillset').fadeIn(1000);
+  
+  $('.projects').hide();
+  
+  $('.projects-button').on('click', function() {
+
+	});
+}
+$(document).ready(main);
+
+
+
+function main() {
+  $('.skillset').hide();
+  $('.skillset').fadeIn(1000);
+  
+  $('.projects').hide();
+  
+  $('.projects-button').on('click', function() {
+		$('.projects').show();
+	});
+}
+
+$(document).ready(main);
+
+
+
+function main() {
+  $('.skillset').hide();
+  $('.skillset').fadeIn(1000);
+  
+  $('.projects').hide();
+  
+  $('.projects-button').on('click', function() {
+		$('.projects').toggle();
+    $('.projects-button').toggleClass('active');
+	});
+}
+
+$(document).ready(main);
+
+
+
+function main() {
+  $('.skillset').hide();
+  $('.skillset').fadeIn(1000);
+  
+  $('.projects').hide();
+  
+  $('.projects-button').on('click', function() {
+		$(this).next().toggle();
+    $(this).toggleClass('active');
+    $(this).text('Projects Viewed');
+	});
+}
+
+$(document).ready(main);
+
+
+
+function main() {
+  $('.skillset').hide();
+  $('.skillset').fadeIn(1000);
+  
+  $('.projects').hide();
+  
+  $('.projects-button').on('click', function() {
+		$(this).next().slideToggle(400);
+    $(this).toggleClass('active');
+    $(this).text('Projects Viewed');
+	});
+}
+
+
+
+Review jQuery
+Nice work! jQuery is a complete library, and we've only covered the basics. If you're interested in adding animations to websites and creating more dynamic elements, take our jQuery course here.
+In this lesson we learned:
+How to link a JavaScript file to an HTML file using a <script> tag.
+jQuery is a library to help JavaScript interact with HTML elements.
+We can make sure our page is ready to go with $(document).ready(). Then, we can pass in a function to ready that will execute when the page is loaded.
+jQuery uses the same selector names as CSS.
+We can hide elements with hide, and show them with show.
+We can make elements appear with fadeIn.
+on('click') functions allow us to make HTML elements clickable. When an element is clicked, the click function will execute the function we provide. It's full sytnax looks like:
+$('.example-class').on('click', function() {
+  // Execute when .example-class is clicked
+});
+toggle will toggle an element on and off the page.
+$(this) will select the specific element that was clicked if placed inside a click function.
+toggleClass can toggle a class on and off.
+We can select elements next to each other with next.
+text will replace a DOM element's text with text we specify.
+slideToggle will make an element slide into and out of the page with an animation.
+Impressive work on completing Learn JavaScript!
+The next Javascript course, Intermediate JavaScript, is coming soon! In the course you'll learn how to write full-fledged programs in JavaScript.
+Until then, try out our jQuery course to make websites more dynamic, or start building applications with JavaScript with our AngularJS course and our React course. AngularJS and React are two application frameworks written in JavaScript. With them, you'll be able to create web applications.
+
+$(document).ready(main);
