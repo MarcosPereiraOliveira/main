@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/abr/2018, 14:30:11
+    Author     : a-zit
+*/
+
+h1{
+    color: blue;
+    padding-left: 1%;
+}
+
+.asset{
+    color: grey;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.mainform{
+    border: 3px solid ;
+    border-radius: 3px;
+    border-style: outset;
+    margin-right: 30%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 2%;
+}
+
+.inputText{
+    width: 80%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 2%;
+}
+
+.selecao{
+    width: 40%;
+    padding: 2%;
+}
+
+a{
+    color: blue;
+}
+
+.botao{
+    padding: 10px 15px 11px !important;
+    font-size: 18px !important;
+    background-color: #57d6c7;
+    font-weight: bold;
+    text-shadow: 1px 1px #57D6C7;
+    color: #ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #57D6C7;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    text-align: center;
+}
